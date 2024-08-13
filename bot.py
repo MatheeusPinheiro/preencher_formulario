@@ -17,8 +17,6 @@ BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
 
 def preencher_dados(bot, nome, email, telefone, sexo, sobre):
-
-    
     #Nome
     bot.find_element('//*[@id="166517069"]', By.XPATH).send_keys(str(nome))
     bot.wait(1000)
